@@ -1,3 +1,39 @@
+# Tic-Tac-Toe
+
+## Description:
+This project was an assignment for the MIT XPRO course. We were given some files and code to work with and were instructed to make the tic-tac-toe game functional. We focused on Parent And Child components in A game, Mounting And Unmounting square components, Parent And Child Re-render and what we could to to improve the Tic-Tac-Toe game.
+
+## How to Run:  
+ To view the live page, cLick the link here [netlify](https://main--tranquil-dasik-658a2c.netlify.app/) 
+ To Run it using React follow the Getting Started with Create React App documentation below.
+ 
+## Roadmap of future improvements:: 
+I will make it so that the buttons are disabled after they have been clicked. When a player places their piece (x and o) on that square it can't be used again. I will use a strikethrough or highlight to show where there are 3 in a row. I will change the "Winner is:" section to a pop up after there is a winner. I will create a score element to add a point to the player each time there is a winner and create a button to start a new game without restarting and resetting the score. I would like to use clipart or png for the pieces instead of X and O. I could style it to match the art. 
+
+## License information: 
+MIT License
+
+Copyright (c) 2023 Jennifer Gerred
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
