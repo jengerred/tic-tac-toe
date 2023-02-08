@@ -4,7 +4,7 @@
 This project was an assignment for the MIT XPRO course. We were given some files and code to work with and were instructed to make the tic-tac-toe game functional. We focused on Parent And Child components in A game, Mounting And Unmounting square components, Parent And Child Re-render and what we could to to improve the Tic-Tac-Toe game.
 
 ## How to Run:  
- To view the live page, cLick the link here [netlify](https://main--tranquil-dasik-658a2c.netlify.app/).  
+ To view the live page, click the link here [netlify](https://main--tranquil-dasik-658a2c.netlify.app/).  
  To Run it using React follow the Getting Started with Create React App documentation below.
  
 ## Roadmap of future improvements:: 
