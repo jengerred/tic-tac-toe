@@ -1,15 +1,17 @@
 const Board = () => {
   // 1st player is X ie 1
   // State keeps track of next player and gameState
+
   const [player, setPlayer] = React.useState(1);
   const [gameState, setGameState] = React.useState([]);
-  let status = `Winner is ${checkForWinner(gameState)}`;
+  let status = `Winner is:   ${checkForWinner(gameState)} `;
 
-  // Part 1 step 1 code goes here
+
   // Use conditional logic to set a variable to either 'Player O' or  'Player X'
   let playerTurn = `Next Player: ${player == '0' ? 'Player O' : 'Player X'}`;
 
-  console.log(`We hav a winner ${status}`);
+  console.log(`We have a winner ${status}`);
+
 
   const takeTurn = (id) => {
     setGameState([...gameState, { id: id, player: player }]);
@@ -22,7 +24,24 @@ const Board = () => {
   }
 
   return (
+    <div>
+
+      <h1 className="title">React Tic-Tac-Toe</h1>
+    
+      <div className="info" id="info">
+      <h1 className="winner" id="winner">{status}</h1>
+      </div>
+     
+      <h1 id="turn">{playerTurn}</h1>
+      <div className="above-game">
+      <button className="reset" onClick={() => {
+          window.location.reload(true);
+        }}>Reset Game</button>
+ 
+     
+      </div>
     <div className="game-board">
+
       <div className="grid-row">
         {renderSquare(0)}
         {renderSquare(1)}
@@ -38,16 +57,16 @@ const Board = () => {
         {renderSquare(7)}
         {renderSquare(8)}
       </div>
-      <div id="info">
-        <h1 id="turn">{playerTurn}</h1>
-        <h1>{status}</h1>
-      </div>
+    </div>
     </div>
   );
 };
 
+
+
+
 const Square = ({ takeTurn, id }) => {
-  const mark = ['O', 'X', '+'];
+  const mark = ['O', 'X', ' '];
   // id is the square's number
   // filled tells you if square has been filled
   // tik tells you symbol in square (same as player)
@@ -56,16 +75,18 @@ const Square = ({ takeTurn, id }) => {
   const [tik, setTik] = React.useState(2);
 
   return (
-    <button
+    <button 
+
       // Part 2: update the return statement below to add css classes
-      className={tik == '1' ? 'red' : 'white'}
-      onClick={() => {
+     
+      onClick  = {() => {
         setTik(takeTurn(id));
         setFilled(true);
+     
         console.log(`Square: ${id} filled by player : ${tik}`);
       }}
     >
-      <h1>{mark[tik]}</h1>
+      <h1 className="chip" id="chip">{mark[tik]}</h1>
     </button>
   );
 };
@@ -104,7 +125,7 @@ const checkPlayerTurn = (gameState) => {
 const checkForWinner = (gameState) => {
   // get array of box id's
   // can't be a winner in less than 5 turns
-  if (gameState.length < 5) return 'No Winner Yet';
+  if (gameState.length < 5) return ' ';
   let p0 = gameState.filter((item) => {
     if (item.player == 0) return item;
   });
@@ -121,9 +142,9 @@ const checkForWinner = (gameState) => {
       return isSuperset(new Set(px), new Set(item));
     });
   }
-  if (win0.length > 0) return 'Player O ';
-  else if (winX.length > 0) return 'Player X ';
-  return 'No Winner Yet';
+  if (win0.length > 0) return `Player O `;
+  else if (winX.length > 0)   return `Player X `;
+  return ' ';
 };
 // check if subset is in the set
 function isSuperset(set, subset) {
@@ -134,6 +155,7 @@ function isSuperset(set, subset) {
   }
   return true;
 }
+
 
 // ========================================
 

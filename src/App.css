@@ -1,38 +1,134 @@
-.App {
+button {
+  background-color: #a2b9d0;
+  border-radius: 10px;
+}
+
+.game-board {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  background-color: #34495e;
+  color: #a2b9d0;
+  border: 6px solid #0b0d0f;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  box-shadow:  5px 10px 10px #34495e,
+  6px 11px 1px #34495e,
+  7px 12px 1px #34495e,
+  8px 13px 1px #34495e,
+  9px 14px 1px #34495e,
+  10px 15px 1px #34495e,
+  11px 16px 1px #34495e,
+  12px 17px 1px #34495e,
+  13px 18px 1px #34495e,
+  14px 19px 1px #34495e,
+  15px 20px 1px #34495e,
+  16px 21px 1px #34495e,
+  17px 22px 1px #34495e,
+  18px 23px 1px #34495e,
+  19px 24px 1px #34495e,
+  20px 25px 1px #34495e,
+  21px 26px 1px #34495e,
+  22px 27px 1px #34495e,
+  23px 28px 1px #34495e,
+  24px 29px 1px #34495e,
+  25px 30px 1px #34495e,
+  26px 31px 1px #34495e,
+  27px 32px 1px #34495e,
+  28px 33px 1px #34495e,
+  29px 34px 1px #34495e,
+  30px 35px 1px #34495e,
+  31px 36px 1px #34495e,
+  32px 37px 1px #34495e,
+  33px 38px 1px #34495e,
+  34px 39px 1px #34495e,
+  35px 40px 1px #34495e,
+  36px 41px 1px #34495e,
+  37px 42px 1px #34495e,
+  38px 43px 1px #34495e,
+  39px 44px 1px #34495e,
+  40px 45px 1px #34495e;
+}
+
+.grid-row {
+  border: 6px solid #739dc7;
+  border-radius: 6px;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 4em;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #a2b9d0;
+}
+.block {
+  background-color: #a2b9d0;
+  border: 6px solid green;
+  border-radius: 6px;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 20em;
+}
+.winner {
+  border-radius: 10px;
+  text-align: center;
+  margin: auto;
+  width: fit-content;
+  padding: 10px;
+padding-right: 200px;
+padding-left: 200px;
+  border:solid 2px rgb(204, 28, 28);
+  margin-bottom: 10px;
+  background-color: #a2b9d0;
+}
+h1 {
   text-align: center;
 }
+.title {
+  margin-top: 10px;
+ text-align: center;
+  font-size: 70px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  color: #2a3d50;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  text-shadow: 1px 1px 0px#a2b9d0,
+               1px 2px 0px#a2b9d0,
+               1px 10px 5px rgba(16, 16, 16, 0.5),
+               1px 15px 10px rgba(16, 16, 16, 0.4),
+               1px 20px 30px rgba(16, 16, 16, 0.3),
+               1px 25px 50px rgba(16, 16, 16, 0.2);
+
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.above-game {
+  text-align: center;
+  margin: auto;
+  margin-right: 25%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.reset {
+  height: 50px;
+  width: 200px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-shadow: 1px 1px 0px #739dc7;
+  border: 5px solid #0b0d0f;
+  border-radius: 50px;
 }
-
-.App-link {
-  color: #61dafb;
+.reset:hover {
+    transform: scale(1.3);
 }
+.chip {
+  font-size: 70px;
+  text-align: center;
+  background: white;
+  border-radius: 50%;
+}
+.winner {
+  color: red;
+  text-shadow: 
+                1px 1px 0px #0b0d0f;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
